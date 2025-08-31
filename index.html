@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero dengan Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"
+    />
+    <style>
+      .hero-section {
+        background-color: #f8f9fa;
+        padding: 3rem 1rem;
+      }
+      .hero-img {
+        max-width: 100%;
+        border-radius: 100%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+      .info-card {
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
+      }
+      .info-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <!-- Change Languages Button -->
+        <div class="text-center mb-2">
+          <span class="me-2 text-muted">Change Languages :</span>
+          <button onclick="ubahBahasa('id')" class="btn btn-sm">
+            <i class="fi fi-id me-1"></i>ID
+          </button>
+          <button onclick="ubahBahasa('en')" class="btn btn-sm">
+            <i class="fi fi-gb me-1"></i>EN
+          </button>
+          <button onclick="ubahBahasa('ar')" class="btn btn-sm">
+            <i class="fi fi-sa me-1"></i>AR
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#digital-printing">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jasa-desain">Digital Printing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+      <div class="container">
+        <!-- Foto + Nama -->
+        <div class="row align-items-center g-4 mb-5">
+          <!-- Foto -->
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="src/img/jalbi ukem.png"
+              alt="Foto Toko"
+              class="hero-img img-fluid"
+              style="max-width: 220px"
+            />
+          </div>
+
+          <!-- Nama -->
+          <div class="col-12 col-md-8 text-center text-md-start">
+            <h1 class="fw-bold mb-3">
+              Jalbi Ukem <span class="badge text-bg-secondary">Freelancer</span>
+            </h1>
+            <p class="text-muted fs-5" id="heroDes">
+              "I provide professional graphic design services with industry
+              standards, as well as digital printing and self-made finished
+              products."
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 Card -->
+        <div class="row g-4">
+          <!-- Jasa Desain -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card info-card h-100 shadow-sm border-0">
+              <div class="card-body text-center p-4">
+                <i class="bi bi-palette-fill display-5 text-warning mb-3"></i>
+                <h5 class="card-title mb-3">Graphic Design</h5>
+                <p id="desDes" class="card-text small">
+                  "I offer a wide range of professional services, from logo
+                  design, brand identity, print and digital promotional
+                  materials, layout design, vector tracing, typography, to
+                  product packaging."
+                </p>
+                <a
+                  href="jasaDesain.html"
+                  class="btn btn-outline-warning btn-sm mt-3"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Printing -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card info-card h-100 shadow-sm border-0">
+              <div class="card-body text-center p-4">
+                <i class="bi bi-printer-fill display-5 text-primary mb-3"></i>
+                <h5 class="card-title mb-3">Digital Printing</h5>
+                <p id="digDes" class="card-text small">
+                  I provide comprehensive printing and photocopying services,
+                  from documents and banners to brochures and invitations. Using
+                  high-quality equipment and an efficient workflow, I ensure
+                  every order is completed quickly with exceptional results.
+                </p>
+                <a
+                  href="produk.html"
+                  class="btn btn-outline-primary btn-sm mt-3"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder untuk Card ke-3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card info-card h-100 shadow-sm border-0 d-flex align-items-center justify-content-center"
+            >
+              <p class="text-muted small p-4 text-center">Coming Soon...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light pt-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto text-center">
+            <div class="d-flex justify-content-center gap-2">
+              <a
+                href="mailto:email@domain.com"
+                class="btn btn-outline-light btn-sm rounded-circle"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a
+                href="https://wa.me/628123456789"
+                target="_blank"
+                class="btn btn-outline-light btn-sm rounded-circle"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="btn btn-outline-light btn-sm rounded-circle"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                class="btn btn-outline-light btn-sm rounded-circle"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <p class="text-center small mb-0">
+          &copy; 2025 Jalbi Ukem. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="src/js/lang.js"></script>
+  </body>
+</html>

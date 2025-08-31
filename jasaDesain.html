@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Desain Grafis</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Mengatur tata letak halaman utama */
+      body {
+        overflow-x: hidden;
+      }
+
+      /* Sidebar navigasi yang tetap di tempatnya */
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh; /* Mengisi tinggi layar penuh */
+        overflow-y: auto; /* Memungkinkan scrolling jika konten sidebar panjang */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .sidebar .nav-link {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+      }
+
+      .sidebar .nav-link:hover {
+        background-color: #e9ecef;
+      }
+
+      /* Untuk tampilan 4 kolom pada desktop */
+      @media (min-width: 992px) {
+        .col-lg-3 {
+          width: 25%;
+        }
+      }
+
+      /* Untuk tampilan 5 kolom pada desktop */
+      @media (min-width: 1200px) {
+        .col-xl-5ths {
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <!-- Change Languages Button -->
+        <div class="text-center mb-2">
+          <span class="me-2 text-muted">Change Languages :</span>
+          <button onclick="ubahBahasa('id')" class="btn btn-sm">
+            <i class="fi fi-id me-1"></i>ID
+          </button>
+          <button onclick="ubahBahasa('en')" class="btn btn-sm">
+            <i class="fi fi-gb me-1"></i>EN
+          </button>
+          <button onclick="ubahBahasa('ar')" class="btn btn-sm">
+            <i class="fi fi-sa me-1"></i>AR
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#digital-printing">Digital Printing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jasa-desain">Jasa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-lg-2 col-md-3 col-12 bg-light sidebar py-4">
+          <h5 class="px-3 mb-3 text-uppercase text-secondary fw-bold">
+            Kategori
+          </h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center text-dark fw-medium"
+                href="#desain-cetak"
+              >
+                <i class="bi bi-printer-fill me-2 text-primary"></i> Desain
+                Cetak
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center text-dark fw-medium"
+                href="#digital-media"
+              >
+                <i class="bi bi-phone-fill me-2 text-success"></i> Desain
+                Digital & Media Sosial
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center text-dark fw-medium"
+                href="#vector"
+              >
+                <i class="bi bi-bezier me-2 text-warning"></i> Desain Vector
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center text-dark fw-medium"
+                href="#typography"
+              >
+                <i class="bi bi-type me-2 text-danger"></i> Typography
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center text-dark fw-medium"
+                href="#imageAndPhoto"
+              >
+                <i class="bi bi-person-standing me-2 text-danger"></i> T-SHIRT
+                DESIGN
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="col-lg-10 py-4">
+          <section id="desain-cetak" class="mb-5">
+            <h2 id="desainCetak" class="mb-4">Print Design</h2>
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/red-shape-visit-card_1435-1237.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="Business Card Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Business Card Design</h5>
+                    <p class="card-text">
+                      Professional contact information cards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/abstract-trifold-brochure-template-with-photo_52683-39687.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="Desain Brosur"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Brochure & Pamphlet Design</h5>
+                    <p class="card-text">
+                      Informative printed promotional materials.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/travel-poster-concept_52683-36094.jpg?semt=ais_hybrid&w=740"
+                    class="card-img-top"
+                    alt="Desain Poster"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Poster Design</h5>
+                    <p class="card-text">
+                      Promotional or announcement media with attractive visuals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/flat-design-cyber-monday-banners-template_52683-48082.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="Desain Undangan"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Banner & Standee Design</h5>
+                    <p class="card-text">Large-sized promotional media.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/packaging-design-templates-product-packaging-design-templates_637898-1623.jpg"
+                    class="card-img-top"
+                    alt="Desain Kop Surat"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Product Packaging Design</h5>
+                    <p class="card-text">
+                      Attractive and informative product wrapping design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/bottle-label_1588-666.jpg"
+                    class="card-img-top"
+                    alt=".................."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Product Label Design</h5>
+                    <p class="card-text">
+                      Packaging labels that contain brand identity
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/clean-simple-business-wall-calendar-template-free-vector_591290-160.jpg"
+                    class="card-img-top"
+                    alt=".................."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Calendar Design</h5>
+                    <p class="card-text">Attractive wall or desk calendars</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/magazine-cover-set-with-photo_23-2148879942.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt=".................."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Magazine & Book Design</h5>
+                    <p class="card-text">
+                      Layout and typography for print media
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/gradient-elegant-certificate-template_23-2148973721.jpg"
+                    class="card-img-top"
+                    alt=".................."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Certificate & Diploma Design</h5>
+                    <p class="card-text">Formal design for awards</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/hand-drawn-floral-wedding-invitation-template_52683-67700.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt=".................."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Invitation Design</h5>
+                    <p class="card-text">
+                      Printed invitations for various events
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/organic-flat-rustic-restaurant-vertical-menu-template-with-photo_23-2148956016.jpg"
+                    alt="Restaurant & Cafe Menu Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Restaurant & Cafe Menu Design</h5>
+                    <p class="card-text">
+                      Menus that are easy to read and fit the theme
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/car-decal-vector-graphic-abstract-racing-designs-vehicle-sticker-vinyl-wrap_3811-10100.jpg?semt=ais_hybrid&w=740"
+                    class="card-img-top"
+                    alt=".................."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Sticker & Decal Design</h5>
+                    <p class="card-text">Promotional or decorative stickers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/hand-drawn-flat-abstract-shapes-pattern_23-2149081867.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="Pattern"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pattern & Seamless Design</h5>
+                    <p class="card-text">
+                      Repeating patterns for fabric, wallpaper, etc
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section id="digital-media" class="mb-5">
+            <h2 class="mb-4">Digital & Social Media Design</h2>
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/digital-marketing-social-media-with-black-man-smartphone-symbol_112255-1365.jpg"
+                    class="card-img-top"
+                    alt="Digital & Social Media Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Social Media Design</h5>
+                    <p class="card-text">
+                      Templates and visual content for various platforms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/stay-home-event-instagram-post-collection-template_52683-36569.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="Instagram Feed & Story Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Instagram Feed & Story Design</h5>
+                    <p class="card-text">Aesthetic and consistent layout.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/set-multipurpose-presentation-infographic-templates-powerpoint-business-vector_9209-158.jpg"
+                    class="card-img-top"
+                    alt="Infographic Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Infographic Design</h5>
+                    <p class="card-text">
+                      Visual presentation of data that is easy to understand.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-photo/sophisticated-company-portfolio-template_634278-29990.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="card-img-top"
+                    alt="Company Profile Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Company Profile Design</h5>
+                    <p class="card-text">Digital or PDF company profile.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-psd/editable-business-presentation-template-psd-modern-design-set_53876-138527.jpg"
+                    class="card-img-top"
+                    alt="Presentation Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Presentation Design</h5>
+                    <p class="card-text">Professional, brand-aligned slides</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/horizontal-digital-marketing-agency-web-template-design_23-2148943944.jpg?semt=ais_hybrid&w=740&q=80"
+                    alt="Web Banner & Ads Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Web Banner & Ads Design</h5>
+                    <p class="card-text">Banners for digital promotions</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149024129.jpg?semt=ais_hybrid&w=740"
+                    class="card-img-top"
+                    alt="UI (User Interface) Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">UI (User Interface) Design</h5>
+                    <p class="card-text">
+                      The appearance of an application or website
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/identity-technology-set_1284-10818.jpg"
+                    class="card-img-top"
+                    alt="Product Mockup"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Product Mockup</h5>
+                    <p class="card-text">
+                      Visual simulation of a product for presentation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section id="vector" class="mb-5">
+            <h2 class="mb-4">Vector & Illustration Design</h2>
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/set-company-logo-design-ideas-vector_53876-60292.jpg"
+                    class="card-img-top"
+                    alt="Vector & Illustration Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Logo Design</h5>
+                    <p class="card-text">A unique symbol for brand identity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/flat-customer-support-illustration_23-2148897392.jpg?w=360"
+                    class="card-img-top"
+                    alt="Custom Icon & Illustration Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Custom Icon & Illustration Design
+                    </h5>
+                    <p class="card-text">Vector-based visual elements.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-vector/cartoon-character-with-cape-cape_1024980-123662.jpg?semt=ais_hybrid&w=740"
+                    class="card-img-top"
+                    alt="Character & Mascot Illustration"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Character & Mascot Illustration</h5>
+                    <p class="card-text">
+                      Unique characters for a brand or event.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://cdn.vectorstock.com/i/500p/88/95/retro-pop-art-man-asking-why-vector-5838895.jpg"
+                    class="card-img-top"
+                    alt="Vector Art from Photos"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Vector Art from Photos</h5>
+                    <p class="card-text">
+                      Turning photos into vector illustrations (flat, WPAP,
+                      cartoon)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://preview.redd.it/hello-i-am-looking-for-a-software-to-make-assembly-v0-6oo6wf11e5791.jpg?width=1080&crop=smart&auto=webp&s=6d35d454b7e961fea81bf8a49c8ac61b021d0490"
+                    alt="........"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Image Tracing / Vectorization</h5>
+                    <p class="card-text">
+                      Converting a raster image into a vector
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section id="typography" class="mb-5">
+            <h2 class="mb-4">Typography & Lettering Design</h2>
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/premium-psd/instagram-post-template_125755-170.jpg"
+                    class="card-img-top"
+                    alt="Typography Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Typography Design</h5>
+                    <p class="card-text">
+                      Creative text for promotional media.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://img.freepik.com/free-vector/positive-lettering-collection_23-2148753947.jpg"
+                    class="card-img-top"
+                    alt="Typography Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Custom Lettering (Digital Hand Lettering)
+                    </h5>
+                    <p class="card-text">
+                      Digitally processed handwritten text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section id="imageAndPhoto" class="mb-5">
+            <h2 class="mb-4">T-SHIRT DESIGN</h2>
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://charmcityscreenprint.com/wp-content/uploads/2024/09/art-sep1.jpg"
+                    class="card-img-top"
+                    alt="Typography Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Color Separation for Screen Printing
+                    </h5>
+                    <p class="card-text">
+                      Redrawing and separating colors for screen preparation
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-xl-5ths">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="https://www.shutterstock.com/image-vector/vector-apparel-mockup-set-collection-600nw-2252008569.jpg"
+                    class="card-img-top"
+                    alt="Typography Design"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Mockup Design</h5>
+                    <p class="card-text">
+                      Creating clothing mockups for any type of model.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="bg-dark text-light pt-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto text-center">
+              <div class="d-flex justify-content-center gap-2">
+                <a
+                  href="mailto:email@domain.com"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                >
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a
+                  href="https://wa.me/628123456789"
+                  target="_blank"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                >
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  class="btn btn-outline-light btn-sm rounded-circle"
+                >
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="border-light" />
+          <p class="text-center small mb-0">
+            &copy; 2025 Jalbi Ukem. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/lang-services.js"></script>
+  </body>
+</html>
